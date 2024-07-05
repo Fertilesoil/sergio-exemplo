@@ -1,12 +1,11 @@
-﻿import Banner from "../Componentes/Banner"
+﻿import { useContext } from "react"
+import Banner from "../Componentes/Banner"
 import Section from "../Componentes/Section"
+import { ContextoExemplo } from "../Contexto";
 
 const Home = () => {
-  const categorias = [
-    { nome: "frontend" },
-    { nome: "backend" },
-    { nome: "mobile" }
-  ]
+
+  const { toggleModal, categorias } = useContext(ContextoExemplo);
 
   return (
     <>
@@ -19,7 +18,10 @@ const Home = () => {
         ))}
       </main>
 
-      <button>
+      <button onClick={(e) => {
+        e.preventDefault();
+        toggleModal();
+      }}>
         Aperte para abrir
       </button>
     </>

@@ -10,11 +10,15 @@ const ModalPadrao = styled.dialog`
   border-radius: .7rem;
   background: #1c1c74;
   color: white;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 
   & > button {
+    width: 100%;
+    text-align: right;
+    margin-top: .5rem;
+    padding-inline-end: .8rem;
     color: white;
     background: transparent;
     cursor: pointer;
