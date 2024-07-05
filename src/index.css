@@ -13,3 +13,7 @@
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
+
+body {
+  background: #262626;
+}

@@ -1,12 +1,13 @@
 ﻿import BotaoMenu from "../Botoes"
 import { BotoesWrapper, Header, Nav } from "./Menu"
+import logo from "/LogoMain.png";
 
 const Menu = () => {
   
   return (
     <Header>
       <Nav>
-        <h1>AluraFlix</h1>
+        <img src={logo} alt="Logo AluraFlix" />
 
         <BotoesWrapper>
           <BotaoMenu>
